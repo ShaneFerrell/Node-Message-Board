@@ -1,0 +1,15 @@
+doctype html
+
+html
+	head
+		title ThatNewDank
+		style
+			include style.css
+
+	body
+		div.make-post
+			form(method="POST" autocomplete="off")
+				input(type="text" name="posttext" placeholder="Make a new post please") 
+
+		div.view-posts
+			posts!= posts
